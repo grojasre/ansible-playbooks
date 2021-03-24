@@ -2,4 +2,4 @@
 mysql_root_password: "curso2020"
 http_host: "localdomain"
 http_conf: "localdomain.conf"
-http_port: "80"
+http_port: "8080"
