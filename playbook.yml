@@ -1,6 +1,7 @@
 ---
 - name: Instalar lftp con apt
   hosts: all
+  become: true
   tasks:
     - name: Instalar ultima version lftp
       apt:
