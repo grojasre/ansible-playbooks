@@ -1,0 +1,11 @@
+---
+- name: Desinstalar lftp con apt
+  hosts: all
+  become: true
+  tasks:
+    - name: Desinstala ultima version lftp
+      apt:
+       name: lftp
+       state: absent
+       update_cache: True
+
