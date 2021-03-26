@@ -1,0 +1,26 @@
+---
+-
+
+  - name: Instalar lftp con apt
+    host: servidor
+    tasks:
+      - name: Instalar ultima version lftp
+        apt:
+          name: lftp
+          state: latest
+          update_cache: True
+
+  - name: Asegurarse de que lftp no esta instalado
+    hosts: servidor
+    tasks:
+      - name: Desinstalar lftp si esta instalado
+        apt:
+          name: lftp
+          state: absent
+
+  - name: Actualizar lftp
+    hosts: servidor
+    tasks:
+      - name: Actualizar paquetes
+        apt:
+          upgrade: dist
