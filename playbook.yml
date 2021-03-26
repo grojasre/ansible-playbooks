@@ -1,7 +1,5 @@
 ---
--
-
-  - name: Instalar lftp con apt
+- name: Instalar lftp con apt
     host: servidor
     tasks:
       - name: Instalar ultima version lftp
