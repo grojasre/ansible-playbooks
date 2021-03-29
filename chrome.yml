@@ -1,0 +1,10 @@
+---
+- name: Añadir repositorio de google chrome
+  hosts: all
+  become: True
+  tasks:
+    - apt_repository:
+        repo: http://dl.google.com/linux/chrome/deb/ stable main
+        state: present
+        filename: 'google-chrome'
+        update_cache: True
