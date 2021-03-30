@@ -23,3 +23,5 @@
 
     - name: Install Google Chrome
       apt: pkg=google-chrome-stable state=installed
+
+    ← ansible: ImportError: No module named ansible.playbook
